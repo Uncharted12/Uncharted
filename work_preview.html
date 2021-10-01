@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uncharted</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#99765c">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <section id="loader">
+        <div class="gif-wrapper">
+            <img src="images/homepage-loader.gif">
+        </div>
+    </section>
+    <section class="nav-bg w-100">
+        <div class="container-fluid px-0 px-lg-3 px-md-1">
+            <div class="page-wrapper">
+                <div class="nav-wrapper">
+                    <nav class="navbar px-md-1">
+                        <a href="index.html">
+                            <div class="logo">
+                                <img src="images/logo_icon.svg" class="logoicon" alt="logo">
+                                <img src="images/logo_text.svg" class="logotext" alt="logo">
+                            </div>
+                        </a>
+                        <div class="menu-toggle" id="mobile-menu">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                        <ul class="nav no-search" id="navbar">
+                            <li class="nav-item"><a href="index.html">Home</a></li>
+                            <li class="nav-item"><a href="about_us.html">Our Story</a></li>
+                            <li class="nav-item"><a href="materials.html">Materials</a></li>
+                            <li class="nav-item"><a href="work_preview.html">Works</a></li>
+                            <li class="nav-item"><a href="contact_us.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="work-preview">
+        <div class="container-fluid px-lg-0">
+            <div class="row align-items-center mt-lg-0 pt-lg-0">
+                <div class="col-lg-12 col-md-12 col-12 px-0">
+                    <div class="thumb-print-wrapper">
+                        <img src="images/work-banner.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container px-lg-5">
+            <div class="row align-items-center mt-lg-0 pt-lg-0 pt-5">
+                <div class="col-lg-12 col-md-12 col-12 text-center mt-md-5">
+                    <!-- <h3>Welcome to the Uncharted Works Section!</h3> -->
+                    <p class="px-5"> This section is reserved for our community of valued designers, partners and project holders that we have had the privilege to work with and for those with whom we will be collaborating in the future. </p>
+                    <p class="px-5">
+                        This exclusive section grants access to the members into our intricate assortment of materials, exquisite collections, and extraordinary projects that we have amassed throughout our journey.
+                    </p>
+                    <a href="work.html">
+                        <button class="mt-2 mb-5 web-btn outline-button">Join our Journey</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+<script src="js/fontawesome.js"></script>
+<script src="js/main.js"></script>
+<script>
+    function myFunction() {
+        setTimeout(function(){ 
+            $("#loader").fadeOut('slow');
+         }, 3500);
+    }
+    $(document).ready(function(){
+        myFunction();
+    })
+</script>
+</html>

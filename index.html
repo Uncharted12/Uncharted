@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Uncharted</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#99765c">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="css/animation.css"> -->
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+    <div class="cursor"></div>
+    <div class="cursor"></div>
+    <section id="loader">
+        <div class="gif-wrapper">
+            <img src="images/homepage-loader.gif">
+        </div>
+    </section>
+    <div>
+        <section class="nav-bg w-100">
+            <div class="container-fluid px-0 px-lg-3 px-md-1">
+                <div class="page-wrapper">
+                    <div class="nav-wrapper">
+                        <nav class="navbar px-md-1">
+                            <a href="index.html">
+                                <div class="logo">
+                                    <img src="images/logo_icon.svg" class="logoicon" alt="logo">
+                                    <img src="images/logo_text.svg" class="logotext" alt="logo">
+                                </div>
+                            </a>
+                            <div class="menu-toggle" id="mobile-menu">
+                                <span class="bar"></span>
+                                <span class="bar"></span>
+                            </div>
+                            <ul class="nav no-search" id="navbar">
+                                <li class="nav-item"><a href="index.html">Home</a></li>
+                                <li class="nav-item"><a href="about_us.html">Our Story</a></li>
+                                <li class="nav-item"><a href="materials.html">Materials</a></li>
+                                <li class="nav-item"><a href="work_preview.html">Works</a></li>
+                                <li class="nav-item"><a href="contact_us.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="video-section">
+            <div class="homewrapper_video">
+                <video id="homepage-video-lg" class="d-lg-block d-md-none d-none"  playsinline autoplay loop
+                    style="width: 100%; height: 100%;" src="homepage_video.mp4" type="video/mp4">
+                </video>
+                <video id="homepage-video-md" class="d-lg-none d-md-block d-none"  playsinline autoplay muted loop
+                    style="width: 100%; height: 100%;" src="tab_video.mp4" type="video/mp4">
+                </video>
+                <video id="homepage-video" class="d-block d-lg-none d-md-none"  playsinline autoplay muted loop
+                    style="width: 100%; height: 100%;" src="mobile-view.mp4" type="video/mp4">
+                </video>
+                
+            </div>
+            <button onclick="enableMute()" class="mute-btn" type="button"><i class="fas fa-volume-mute"></i></button>
+            <button onclick="disableMute()" class="unmute-btn" type="button"><i class="fas fa-volume-off"></i></button>
+
+        </section>
+    <section class="aboutus-section my-lg-0 my-md-0 py-md-5 my-5">
+            <div class="container-fluid">
+                <div class="row align-items-top align-items-md-center">
+                    <div class="col-lg-6 col-md-6 col-12 order-lg-0 order-md-0 order-11 about-us-container mt-lg-0 mt-md-0 mt-5">
+                        <div class="fix-height pt-md-5">
+                            <div class="about-brown-bg text-left" data-animation="show"><img src="images/test-img.jpg"
+                                    alt=""></div>
+                            <!-- <h5 class="about-img-text">Designed by FG stijl by Colin Finnegan</h5> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-12 pt-5 pt-md-0">
+                        <div class="about-content">
+                            <div class="about-us-heading">
+                                <h2>OUR STORY</h2>
+                            </div>
+                            <hr class="moving-line">
+                            <div class="about-us-para">
+                                <p class="">
+                                    Welcome to the world of individuality that embraces creation of nature and paves the way for creative emotional experiences. At Uncharted, we are navigators and trailblazers who believe creativity is a spontaneous journey and approach all our projects with no predetermined notion 
+of a destination. 
+
+                                </p>
+                            </div>
+                            <a href="about_us.html">
+                                <button type="submit" class="web-btn outline-button">
+
+                                    Discover More
+
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- <div class="col-12 order-lg-0 order-11 mt-3 d-lg-none d-md-none d-block mx-auto">
+                        <a href="about_us.html">
+                            <button type="submit" class="web-btn outline-button mb-5 mb-lg-0 mb-md-0">
+
+                                Discover More
+
+                            </button>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <section class="mob-img-wrapper d-lg-none d-md-none d-block my-3">
+            <img src="images/mobile-gif/v1.gif" class="w-100">
+        </section>
+        <section class="mid-gif d-lg-none d-md-none d-block">
+        </section>
+        <section class="material-section my-lg-0 my-md-0 mt-5">
+            <div class="material-heading pl-3">
+                <h2 class="transformable-text">Materials</h2>
+                <hr class="moving-line-material d-lg-none d-md-none d-block">
+            </div>
+            <section class="material-slider transform-container py-lg-3 py-3">
+                <div class="container">
+                    <div class="slider">
+                        <div class="homepage-slides">
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/mat-slider1.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/mat-slider2.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/mat-slider3.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/mat-slider4.jpg">
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="img-wrap">
+                                    <img class="transform-target" src="images/mat-slider5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="antique-section w-100">
+                <!-- <a data-toggle="modal" data-target="#exploreMaterialModal"> -->
+                    <a href="materials.html">
+                    <button
+                        class="outline-button mx-auto d-block mb-lg-5 mb-md-0 transformable-text">Explore
+                        More</button></a>
+                <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                    <img src="images/mobile-gif/v2.gif" class="w-100">
+                </section>
+            </section>
+            <section style="background-color: #f3f3ec;" class="future-antiques">
+                <div class="container py-lg-0 py-md-0 py-5">
+                    <div class="antiques-animate">
+                        <div class="heading-container">
+                            <h2 class="transformable-text">Antiques of the future</h2>
+                            <hr class="moving-line-antique d-lg-none d-md-none d-block">
+                        </div>
+                        <div class="row mt-lg-5 mt-4 px-lg-0 px-3">
+                            <div class="antique-content">
+                                <div class="antique-left">
+                                    <div class="antique-info">
+                                        <div class="antique-image-container" data-animation="show">
+                                            <img class="" src="images/antique1.jpg" alt="antiques">
+                                        </div>
+                                        <div class="antique-line"></div>
+                                        <p class="">Every design tells a story- of people and their inspirations/emotions; of craftsmen and their touch; of materials and their history. With the products we curate at Uncharted, we wish to narrate experiences that supersede the boundaries of time.</p>
+                                    </div>
+                                </div>
+                                <div class="antique-right">
+                                    <div class="antique-cover" data-animation="show">
+                                        <img src="images/antique2.jpg" alt="antiques">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="project-section">
+                <div class="heading-container pl-3">
+                    <h2 class="transformable-text">Projects</h2>
+                    <hr class="moving-line-project d-lg-none d-md-none d-block">
+                </div>
+                <div class="container">
+                    <div class="slider">
+                        <div class="controls">
+                            <div class="captions">
+                                <div class="caption">
+                                    <h3>Hospitality | Marine | Residential</h3>
+                                </div>
+                            </div>
+                            <div class="pagination"></div>
+                        </div>
+                        <div class="slider-container transform-container">
+                            <div class="slider-project py-lg-0 py-md-3">
+                                <div class="slide">
+                                    <div class="img-wrapper">
+                                        <img class="transform-target" src="images/kempinski.png">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="img-wrapper">
+                                        <img class="transform-target" src="images/dior.png">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="img-wrapper">
+                                        <img class="transform-target" src="images/fendi.png">
+                                    </div>
+                                </div>
+                                <div class="slide">
+                                    <div class="img-wrapper">
+                                        <img class="transform-target" src="images/hyatt.png">
+                                    </div>
+                                </div>
+                                
+                                <div class="slide">
+                                    <div class="img-wrapper">
+                                        <img class="transform-target" src="images/mandarin.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <div class="project-caption">
+                                    <div class="caption">
+                                        <h3>Kempinski Munich – FG Stijl – Munich, Germany</h3>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Dior Store Landmark – Peter Marino - Seoul</h3>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Fendi Store Madison Avenue – Peter Marino - New York, USA</h3>
+                                    </div>
+                                    <div class="caption">
+                                        <h3>Park Hyatt Vienna – FG Stijl – Vienna, Austria</h3>
+                                    </div>
+                                    
+                                    <div class="caption">
+                                        <h3>Mandarin Oriental Munich – FG Stijl – Munich, Germany</h3>
+                                    </div>
+                                </div>
+                                <div class="pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <a data-toggle="modal" data-target="#exploreMaterialModal"> -->
+                    <a href="work_preview.html">
+                        <button class="web-btn outline-button mt-lg-5 mt-3 d-block mx-auto transformable-text">
+                            Discover More
+                        </button>
+                    </a>
+                </div>
+            </section>
+            <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                <img src="images/mobile-gif/v2.gif" class="w-100">
+            </section>
+            <!-- <section class="contact-section">
+                <h2 class="transformable-text">
+                    Contact
+                </h2>
+                <hr class="moving-line-contact d-lg-none d-md-none d-block">
+                <div class="contact-content">
+                    <div class="container">
+                        <div class="contact-button"><a class="solid-button mt-5" href="contact_us.html">GET
+                                IN TOUCH</a></div>
+                    </div>
+                </div>
+            </section> -->
+            <!-- <section class="mob-img-wrapper d-lg-none d-md-none d-block">
+                <img src="images/mobile-gif/v3.gif" class="w-100">
+            </section> -->
+            <section class="footer">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div class="footer-logo">
+                                    <div class="icon"><img src="images/logo_icon.svg" alt="logo"></div>
+                                    <div class="icon-text"><img src="images/logo_text.svg" alt="logo"></div>
+                                    <!-- <div class="tag-line"><img src="images/tagline.svg" alt="logo"></div> -->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about_us.html">Our Story</a></li>
+                                        <li><a href="materials.html">Materials</a></li>
+                                        <li><a href="work_preview.html">Works</a></li>
+                                        <li><a href="contact_us.html">Contact</a></li>
+        
+                                        <li>
+                                            <a href="/"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                                        </li>
+        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 text-lg-left text-md-left text-center">
+                                <div>
+                                    <form class="newsletterForm py-md-3" action="https://formcarry.com/s/Pi_qQ5C3BJm" method="POST" accept-charset="UTF-8" >
+                                    <div class="newsletter-form">
+                                        <p class="my-md-2" style="font-family:'laren-light';">Get the latest
+                                            updates, discover
+                                            exclusive designs and offers straight in your inbox.</p>
+                                        <div class="d-lg-flex d-flex d-md-block mb-3 w-100" style="justify-content: space-between;">
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Customer</span>
+                                                    <input type="radio" name="category" value="customer"
+                                                        checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Professional</span>
+                                                    <input type="radio" name="category" value="professional"
+                                                        checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Press</span>
+
+                                                    <input type="radio" name="category" value="press" checked="checked"
+                                                        name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" name="email" class="form-control"
+                                            placeholder="Enter your mail address">
+                                        <button type="submit" class="subscribe-text">SUBSCRIBE TO UNCHARTED
+                                            NEWSLETTER</button>
+                                    </div>
+                                </form>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="cookies">
+            <div class="container-fluid">
+                <div class="cookie-heading">Uncharted uses cookies</div>
+                <div class="row align-items-flex-end">
+                    <div class="col-8">
+                        <p class="cookie-para">Cookies make our site work properly and securely. By allowing us, you will get the best user experience with brand enriched content & relevant products and services.</p>
+                    </div>
+                    <div class="col-4">
+                        <button class="cookie-btn" type="submit">OK</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- newsletter modal -->
+    <!-- Modal -->
+    <div class="modal fade popups" id="newsletterModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered  modal-lg mt-lg-0 mt-md-0 mt-4">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-4 col-12 d-lg-block d-md-block d-block newsletter-img px-0">
+                                <div class="news-img-wrapper">
+                                    <img src="images/newsletter.jpeg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-8 col-12 py-lg-0 py-md-0 py-3 form-bg">
+                                <form class="newsletterForm py-md-3" action="https://formcarry.com/s/aK4D9fCldNX"
+                                    accept-charset="UTF-8">
+                                    <div class="newsletter-form">
+                                        <h1 class="text-center mb-0">SIGN IN</h1>
+                                        <p class="my-lg-4 my-md-2 small" style="font-family:'laren';">Get the latest
+                                            updates, discover
+                                            exclusive designs and offers straight in your inbox.</p>
+                                        <div class="d-flex mb-3" style="justify-content: space-between;">
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Customer</span>
+                                                    <input type="radio" name="category" value="customer"
+                                                        checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Professional</span>
+                                                    <input type="radio" name="category" value="professional"
+                                                        checked="checked" name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                            <div class="radio-btn">
+                                                <label class="radio-container">
+                                                    <span class="ml-3">Press</span>
+
+                                                    <input type="radio" name="category" value="press" checked="checked"
+                                                        name="radio">
+                                                    <span class="checkmark"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <input type="text" name="email" class="form-control"
+                                            placeholder="Enter your mail address">
+                                        <button type="submit" class="subscribe-text">SUBSCRIBE TO UNCHARTED
+                                            NEWSLETTER</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- open popup  explore more -->
+    <div class="modal fade popups" id="exploreMaterialModal" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="modal-body p-0">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 col-md-5 col-12 d-lg-block d-md-block d-block newsletter-img px-0">
+                                <div class="news-img-wrapper">
+                                    <img src="images/newsletter.jpeg">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-7 col-12 py-lg-0 py-md-0 py-3 form-bg">
+                                <form class="newsletterForm" action="https://formcarry.com/s/aK4D9fCldNX"
+                                    accept-charset="UTF-8">
+                                    <div class="newsletter-form">
+                                        <div class="row py-2">
+                                            <h1 class="text-center mb-0 col-12 mb-2">ENQUIRY</h1>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="text" name="first_name" class="form-control"
+                                                    placeholder="Enter your First Name">
+                                            </div>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="text" name="last_name" class="form-control"
+                                                    placeholder="Enter your Last Name">
+                                            </div>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="text" name="company_name" class="form-control"
+                                                    placeholder="Enter your Company Name">
+                                            </div>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="url" name="website" class="form-control"
+                                                    placeholder="Enter your Website Name">
+                                            </div>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="text" name="email" class="form-control"
+                                                    placeholder="Enter your mail address">
+                                            </div>
+                                            <div class="col-6 mb-lg-3 mb-2 px-lg-3 px-md-1 px-1">
+                                                <input type="tel" maxlength="10" name="number" class="form-control"
+                                                    placeholder="Enter your Phone Number">
+                                            </div>
+                                            <div class="col-12 mb-lg-3 mb-2">
+                                                <select class="selectpicker">
+                                                    <option>Architect</option>
+                                                    <option>Interior Designer</option>
+                                                    <option>Distributor</option>
+                                                    <option>Hotel</option>
+                                                    <option>Furniture Store</option>
+                                                    <option>Contractor</option>
+                                                    <option>Media</option>
+                                                    <option>Press</option>
+                                                    <option>Not Professional</option>
+                                                    <option>Other</option>
+                                                </select>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <Textarea placeholder="Project Details" name="message"></Textarea>
+                                            </div>
+                                            <button type="submit" class="subscribe-text">SEND</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+
+<!-- (Optional) Latest compiled and minified JavaScript translation files -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/i18n/defaults-*.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
+<!-- <script src="js/luxy.js"></script> -->
+<!-- <script src="js/emergence.js"></script> -->
+<script src="js/fontawesome.js"></script>
+<script src="js/main.js"></script>
+
+
+
+
+<script>
+
+
+
+
+    $(function () {
+        $(".newsletterForm").submit(function (e) {
+            let category = $('#addAddressModal').find("input[name=category]:checked").val();
+            e.preventDefault();
+            var href = $(this).attr("action");
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                url: href,
+                data: $(this).serialize(),
+                success: function (response) {
+                    if (response.status == "success") {
+                        $(".newsletterForm").html(`
+                        <h5 class="text-center font-white">We have received your subscription,<br> Thank You!</h5>
+                      `)
+                    } else {
+                        alert("An error occured: " + response.message);
+                    }
+                }
+            });
+        });
+    });
+
+    // var popupShown = $('#newsletterModal').is(':visible');
+    // if (document.cookie.indexOf("popupShown=true") == -1) {
+    //     document.cookie = "popupShown=true; max-age=86400"; // 86400: seconds in a day
+    //     // make the popup show here
+    //     setTimeout(function () {
+    //         $('#newsletterModal').modal('show');
+    //     }, 25000);
+    // }
+
+
+    $(document).ready(function () {
+        function myFunction() {
+            setTimeout(function () {
+                $("#loader").fadeOut('slow');
+            }, 5000);
+        }
+        myFunction();
+
+        if (localStorage.hasOwnProperty('cookie')) {
+            $(".cookies").addClass('d-none');
+        }
+    })
+
+    var vid_lg = document.getElementById("homepage-video-lg");
+    var vid_md = document.getElementById("homepage-video-md");
+    var vid_mob = document.getElementById("homepage-video");
+    
+    $(document).ready(function () {
+        $(".unmute-btn").show();
+        $(".mute-btn").hide();
+        vid_lg.muted = true;
+        vid_md.muted = true;
+        vid_mob.muted = true;
+    })
+
+    function enableMute() {
+        console.log('enable');
+        vid_lg.muted = true;
+        vid_md.muted = true;
+        vid_mob.muted = true;
+        $(".unmute-btn").show();
+        $(".mute-btn").hide();
+    }
+
+    function disableMute() {
+        console.log('disable');
+        vid_lg.muted = false;
+        vid_md.muted = false;
+        vid_mob.muted = false;
+        $(".unmute-btn").hide();
+        $(".mute-btn").show();
+    }
+
+
+
+
+    var lastScroll = 0;
+    var elementList = $('.transformable-text');
+    var tarnsformContainers = $('.transform-container');
+    $(window).on('resize scroll', function () {
+        var scroll = $(window).scrollTop();
+        if (scroll > lastScroll) {
+
+            if(window.innerWidth <= 767) {
+                console.log("test test");
+            if($('.aboutus-section').isInViewport()){
+                setTimeout(function () {
+                    $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                    setTimeout(function () {
+                        $('.moving-line').css('transition', 'all 0.4s linear').css('width', '450px');
+                        setTimeout(function () {
+                            $('.aboutus-section .about-us-para p').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                            setTimeout(function () {
+                                $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
+                                setTimeout(function () {
+                                    $('.aboutus-section button').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                                }, 500)
+                            }, 500)
+                        }, 500)
+                    }, 500)
+                },200)
+            }
+            else
+            {
+                $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:100%;}</style>');
+                $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(140%)');
+                $('.aboutus-section .about-us-para p').css('transform', 'translateY(140%)');
+                $('.aboutus-section button').css('transform', 'translateY(140%)');
+                $('.moving-line').css('transition', 'all 0s linear').css('width', '0px');
+            }
+            }
+
+
+            if ($('.aboutus-section').isInViewport()) {
+                $('head').append('<style>.about-brown-bg::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+                setTimeout(function () {
+                    $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
+                    setTimeout(function () {
+                        $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                        setTimeout(function () {
+                            $('.aboutus-section .about-us-para p').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                            setTimeout(function () {
+                                $('.aboutus-section button').css('transform', 'translateY(0%)').css('transition', 'transform 0.2s linear');
+                                setTimeout(function () {
+                                    $('.moving-line').css('transition', 'all 0.4s linear').css('width', '450px');
+                                }, 500)
+                            }, 500)
+                        }, 500)
+                    }, 700)
+                }, 200)
+            } else {
+                $('head').append('<style>about-brown-bg::before{transition:unset;}</style>');
+                $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:100%;}</style>');
+                $('.aboutus-section .about-us-heading h2').css('transform', 'translateY(140%)');
+                $('.aboutus-section .about-us-para p').css('transform', 'translateY(140%)');
+                $('.aboutus-section button').css('transform', 'translateY(140%)');
+                $('.moving-line').css('transition', 'all 0s linear').css('width', '0px');
+            }
+
+
+            if($('.project-section').isInViewport()){
+                setTimeout(function () {
+                $('.moving-line-project').css('transition', 'all 0.7s linear').css('width', '450px');
+                },500)
+            }
+            else{
+                $('.moving-line-project').css('transition', 'all 0s linear').css('width', '0px');
+            }
+
+            if($('.material-section').isInViewport()){
+                setTimeout(function () {
+                $('.moving-line-material').css('transition', 'all 0.7s linear').css('width', '450px');
+                },500)
+            }
+            else{
+                $('.moving-line-material').css('transition', 'all 0s linear').css('width', '0px');
+            }
+
+
+
+            if ($('.antique-content').isInViewport()) {
+                $('.antique-right .antique-cover').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+                $('head').append('<style>.antique-right .antique-cover::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+                $('head').append('<style>.antique-image-container::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+                // setTimeout(function () {
+                    setTimeout(function () {
+                        $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
+                        setTimeout(function () {
+                            $('.antique-image-container img').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+                            $('head').append('<style>.antique-image-container[data-animation=show]::before{height:0%;}</style>');
+                            setTimeout(function () {
+                                $('.antique-left p').css('transition', 'transform 0.2s linear').css('transform', 'translateY(0%)');
+                                setTimeout(function () {
+                                    $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
+                                    setTimeout(function(){
+                                        $('.moving-line-antique').css('transition', 'all 0.7s linear').css('width', '450px');
+                                    },500)
+                                }, 500)
+                            }, 500)
+                        }, 800)
+                    }, 500)
+                // },200)
+            } else {
+                $('.moving-line-antique').css('transition', 'all 0s linear').css('width', '0px');
+                $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(140%)');
+                $('.antique-line').css('transition', 'all 0s linear').css('width', '0%');
+                $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-image-container[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-image-container[data-animation=show]::before{height:100%;}</style>');
+                $('head').append('<style>.antique-right .antique-cover::before{transition:unset;}</style>');
+                $('head').append('<style>.antique-image-container::before{transition:unset;}</style>');
+            }
+
+            // if ($('.contact-section').isInViewport()) {
+            //     $('.contact-section h2').css('transition', 'transform 0.4s linear').css('transform', 'translateY(0%)');
+            //     setTimeout(function () {
+            //     $('.moving-line-contact').css('transition', 'all 0.7s linear').css('width', '450px');
+            //     },500)
+            // } else {
+            //     $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(100%)');
+            //     $('.moving-line-contact').css('transition', 'all 0s linear').css('width', '0px');
+
+            // }
+
+            // if ($('.contact-button').isInViewport()) {
+            //     $('.contact-button a').css('transition', 'transform 0.4s linear').css('transform', 'translateX(0%)');
+            // } else {
+            //     $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(-100%)');
+            // }
+
+            $(elementList).each(function (idx, ele) {
+                if ($(ele).isInViewport()) {
+                    // is in viewport
+                    $(ele).css('transform', 'translateY(0%)').css('transition', 'transform 0.4s linear');
+                } else {
+                    // is not in viewport
+                    $(ele).css('transition', 'all 0s linear').css('transform', 'translateY(100%)');
+                }
+            });
+
+            $(tarnsformContainers).each(function (idx, ele) {
+                if ($(ele).isInViewport()) {
+                    // is in viewport
+                    $(ele).find('.transform-target').css('transition', 'all 0.4s linear').css('transform', 'translateY(0%)');
+                } else {
+                    // is not in viewport
+                    $(ele).find('.transform-target').css('transition', 'all 0s linear').css('transform', 'translateY(100%)');
+                }
+            });
+            if (!$('#homepage-video-lg').isInViewport()) {
+                var vid = document.getElementById("homepage-video-lg");
+                vid.pause()
+            }
+            // if ($('#homepage-video-lg').isInViewport()) {
+            //     var vid = document.getElementById("homepage-video-lg");
+            //     vid.play()
+            // }
+        }
+        else if (scroll == 0) {
+            // mob view
+            $('head').append('<style>.antique-right .antique-cover::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.antique-image-container::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.about-brown-bg::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
+            $('head').append('<style>.antique-image-container[data-animation=show]::before{height:0%;}</style>');
+            $('.transform-target').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section .about-us-heading h2').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section .about-us-para p').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section button').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.transformable-text').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.moving-line').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-material').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-contact').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-project').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-antique').css('transition', 'all 0s linear').css('width', '450px');
+            $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
+            $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
+            $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
+            $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
+            $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
+            if ($('#homepage-video-lg').isInViewport()) {
+                var vid = document.getElementById("homepage-video-lg");
+                vid.play()
+            }
+        }
+        else {
+            $('head').append('<style>.about-brown-bg::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.antique-right .antique-cover::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.antique-image-container::before{transition:0.8s cubic-bezier(0.215, 0.61, 0.355, 1);}</style>');
+            $('head').append('<style>.about-brown-bg[data-animation=show]::before{height:0%;}</style>');
+            $('head').append('<style>.antique-right .antique-cover[data-animation=show]::before{height:0%;}</style>');
+            $('.transform-target').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.about-brown-bg').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section .about-us-heading h2').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section .about-us-para p').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.aboutus-section button').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.transformable-text').css('transition', 'all 0s linear').css('transform', 'translateY(0%)');
+            $('.moving-line').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-material').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-contact').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-project').css('transition', 'all 0s linear').css('width', '450px');
+            $('.moving-line-antique').css('transition', 'all 0s linear').css('width', '450px');
+            
+            $('.antique-left p').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
+            $('.antique-line').css('transition', 'all 0.2s linear').css('width', '100%');
+            $('.antique-image-container img').css('transition', 'transform 0.5s linear').css('transform', 'translateY(0%)');
+            $('head').append('<style>.antique-image-container[data-animation=show]::before{height:0%;}</style>');
+            $('.contact-section h2').css('transition', 'transform 0s linear').css('transform', 'translateY(0%)');
+            $('.contact-button a').css('transition', 'transform 0s linear').css('transform', 'translateX(0%)');
+        }
+        lastScroll = scroll;
+    });
+
+    // $.fn.isInViewport = function () {
+	// var elementTop = $(this).offset().top;
+	// var elementBottom = elementTop + $(this).outerHeight();
+	// var viewportTop = $(window).scrollTop();
+	// var viewportBottom = viewportTop + $(window).height();
+	// return elementBottom > viewportTop && elementTop < viewportBottom;
+    // };
+
+    
+
+
+
+$('body').on('click','.cookie-btn',function(){
+    $(".cookies").addClass('d-none');
+
+    localStorage.setItem('cookie',"1");
+});
+
+</script>
+<script>
+
+    $(".homepage-slides").slick({
+        asNavFor: '.homepage-captions',
+        infinite: true,
+        speed: 1800,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                    dots: true,
+                },
+            },
+        ],
+    })
+    var project = $(".slider-project").slick({
+        asNavFor: '.project-caption',
+        infinite: true,
+        speed: 1500,
+        autoplay: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                },
+            },
+        ],
+
+    })
+    project[0].slick.cssTransitions = false;
+    $(".project-caption").slick({
+        asNavFor: '.slider-project',
+        infinite: true,
+        speed: 1500,
+
+        dots: false,
+        autoplay: true,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    autoplay: true,
+                },
+            },
+        ],
+    })
+    // To style all selects
+    $('select').selectpicker();
+</script>
+
+</html>
